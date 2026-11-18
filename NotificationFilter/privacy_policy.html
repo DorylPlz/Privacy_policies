@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for the NotificationFilter Android app." />
+  <title>Privacy Policy — NotificationFilter</title>
+  <style>
+:root { color-scheme: light; }
+    body {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 22px 48px;
+      color: #202124;
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 8px; }
+    h2 { margin-top: 34px; padding-bottom: 6px; border-bottom: 1px solid #dadce0; font-size: 1.3rem; }
+    h3 { margin-top: 24px; font-size: 1.05rem; }
+    .updated, .muted { color: #5f6368; }
+    .language { margin: 0 0 28px; }
+    .summary { padding: 16px 20px; background: #f8f9fa; border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { border: 1px solid #dadce0; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f8f9fa; }
+    a { color: #1558d6; }
+    @media (max-width: 600px) {
+      body { margin-top: 24px; padding-right: 16px; padding-left: 16px; }
+      table { font-size: 0.92rem; }
+      th, td { padding: 8px; }
+    }
+    [hidden] { display: none !important; }
+    .language { display: flex; gap: 8px; margin: 0 0 28px; }
+    .language button {
+      border: 1px solid #dadce0;
+      border-radius: 6px;
+      padding: 8px 14px;
+      background: #fff;
+      color: #1558d6;
+      font: inherit;
+      cursor: pointer;
+    }
+    .language button[aria-pressed="true"] { background: #e8f0fe; border-color: #1558d6; }
+    .language button:focus-visible { outline: 3px solid #8ab4f8; outline-offset: 2px; }
+
+  </style>
+</head>
+<body>
+  <nav class="language" aria-label="Language / Idioma">
+    <button type="button" data-language-button="en" aria-pressed="true">English</button>
+    <button type="button" data-language-button="es" aria-pressed="false">Español</button>
+  </nav>
+
+  <main id="policy-en" lang="en" data-policy-language="en">
+    <h1>Privacy Policy — NotificationFilter</h1>
+      <p class="updated">Effective date: November 18, 2026 · Last updated: November 18, 2026</p>
+
+      <p>
+        This policy applies to NotificationFilter, an Android app that filters notifications using rules you configure.
+        “We” means the developer operating NotificationFilter through its Google Play listing. The privacy contact is
+        <a href="mailto:notification.filter.app@gmail.com">notification.filter.app@gmail.com</a>.
+      </p>
+
+      <h2>At a glance</h2>
+      <ul class="summary">
+        <li>Notification and app-list information is processed locally on your Android device to provide filtering.</li>
+        <li>The app does not operate an account or backend and does not automatically send notification content, app inventory, rules, or history to us or an analytics or advertising service.</li>
+        <li>We do not sell personal information. The app has no ads or analytics SDKs.</li>
+        <li>You can revoke notification access in Android Settings and erase app-local data by clearing the app's storage or uninstalling it.</li>
+      </ul>
+
+      <h2>Information accessed and how it is used</h2>
+
+      <h3>Notifications</h3>
+      <p>
+        If you enable Notification access in Android Settings, Android provides the app with notifications posted by other
+        apps while access is enabled. The app checks notifications on-device against your per-app rules and any global
+        keyword rules. Therefore, a notification can be checked even if you have not enabled a per-app filter, because a
+        global rule may apply.
+      </p>
+      <p>
+        For this check, the app may access the source app's package name and label, notification title and text, and
+        channel/category identifiers or metadata. It uses these details only to apply your rules and display filtering
+        results. Content of notifications can itself contain sensitive or personal information, including information
+        about another person. The app does not send this content to our servers.
+      </p>
+      <p>
+        When a notification is blocked, the app saves a local history entry containing the source app name and package
+        name, title, text, channel/category metadata, and the time it was blocked. Notifications that are not blocked are
+        checked in memory and are not added to this history.
+      </p>
+
+      <h3>Installed apps and notification channels</h3>
+      <p>
+        To let you choose apps and configure channel rules, the app reads launcher apps' package names, displayed names,
+        and icons, and reads notification-channel information for an app you open in the filter settings. This information
+        is used on-device for display and rule configuration; it is not uploaded.
+      </p>
+
+      <h3>Rules, settings, and local summaries</h3>
+      <p>
+        The app stores your selected apps, package names and labels, channel rules, allow/block keywords, global keyword
+        rules and exclusions, and reinforced-mode preference locally. It also calculates a weekly count from local
+        blocked-history entries and may show it as an Android notification. The summary is generated on the device; it
+        does not use a push-notification server.
+      </p>
+
+      <h3>Optional diagnostic logs and sharing</h3>
+      <p>
+        File diagnostics are disabled by default in the standard release configuration. In a development or other build
+        where logging is enabled, logs are stored in the app's private storage for up to three days and may include an
+        app package/name, a blocked notification title, and the rule that matched. If you choose the app's log-export
+        action, Android opens the system share sheet and you choose whether and where to send the exported file. That
+        recipient may then process or retain the file under its own practices; we cannot retrieve or delete a copy you
+        choose to share.
+      </p>
+
+      <h2>Storage, retention, and deletion</h2>
+      <ul>
+        <li>
+          Rules and settings remain on the device until you change them, clear the app's storage, or uninstall the app.
+        </li>
+        <li>
+          Blocked-notification history is intended to be retained for no more than 14 days. The app removes older entries
+          when its database is initialized, a blocked notification is recorded, or history is loaded. If the app is not
+          used, physical removal can be delayed until one of those events occurs.
+        </li>
+        <li>
+          To remove app-local data immediately, use Android Settings → Apps → NotificationFilter → Storage → Clear
+          storage/data, or uninstall the app. Android's app-private data is removed on uninstall. The app disables
+          Android backup for its data.
+        </li>
+        <li>
+          To stop future notification access, turn NotificationFilter off in Android Settings → Notification access.
+          You can also turn off the optional notification permission in Android Settings.
+        </li>
+      </ul>
+      <p>
+        We do not receive the on-device database and cannot remotely inspect or erase it. If you have emailed us or
+        voluntarily shared a log, contact us at the address below to request deletion of information we hold, subject to
+        any legal retention requirement.
+      </p>
+
+      <h2>Disclosure of data and third parties</h2>
+      <p>
+        The app's current production functionality has no account, analytics, advertising, crash-reporting, or app-backend
+        service and does not make network requests to transmit the data described above. The Android package declares
+        Internet permission; that permission is not used by the app's production
+        filtering features to upload your data. Review of the app's SDKs and network behavior is required again whenever
+        the app or its dependencies change.
+      </p>
+      <p>
+        We do not automatically disclose, sell, or share the information processed by the app. If you independently email
+        support, your email address, message, and any attachments you choose to include are received through Gmail; Google
+        may process that correspondence as the email service provider under its own privacy terms. We use support
+        correspondence to respond and retain it only as long as reasonably needed or legally required.
+      </p>
+      <p>
+        This policy is hosted using GitHub Pages. When you open this webpage, GitHub may process technical request data
+        such as your IP address and browser information under
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.
+        This webpage hosting is separate from the app's on-device operation. Android, Google Play, your email provider,
+        and any app you select in the Android share sheet may separately process information under their own policies.
+      </p>
+
+      <h2>Permissions and user choice</h2>
+      <table>
+        <thead>
+          <tr><th>Access or permission</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Notification access (enabled by you in Android Settings)</td><td>Check notifications against your rules; record blocked items locally.</td></tr>
+          <tr><td>Installed launcher apps and their icons</td><td>Let you select apps to filter and identify them in the app.</td></tr>
+          <tr><td>Post notifications</td><td>Optional weekly local summary and, if you enable reinforced mode, its persistent status notification.</td></tr>
+          <tr><td>Receive boot completed</td><td>Restore the listener after the device restarts, if notification access remains enabled.</td></tr>
+          <tr><td>Foreground service (special use)</td><td>Only when you turn on optional reinforced mode.</td></tr>
+          <tr><td>Internet (declared by the Android package)</td><td>No production feature currently uses it to transmit the data described in this policy.</td></tr>
+        </tbody>
+      </table>
+      <p>
+        The app does not request access to contacts, SMS, call logs, location, microphone, or camera. You can decline or
+        revoke notification access; filtering then stops. Android may show separate system permission prompts for
+        notifications.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        App data is stored in Android app-private SQLite/preferences storage and is not included in Android app backup by
+        this app. Android's application sandbox and your device's security protections apply. The app does not add
+        separate database-level encryption, so protect your device with its available screen-lock and storage-security
+        controls. No personal notification data is transmitted by the app's current production functionality.
+      </p>
+
+      <h2>Your privacy choices and rights</h2>
+      <p>
+        You can access and manage rules in the app, revoke notification access, clear local storage, or uninstall the app
+        as described above. For a privacy question or a request concerning information you sent us, email
+        <a href="mailto:notification.filter.app@gmail.com">notification.filter.app@gmail.com</a>. Please do not include
+        notification contents or other sensitive information unless necessary. We may ask for reasonable information to
+        verify a request. Rights and response periods depend on your location and whether a law applies to the developer.
+      </p>
+      <h3>Chile</h3>
+      <p>
+        Chile's Law No. 19,628 currently provides rights that include access, correction, and deletion or blocking in
+        applicable circumstances. Law No. 21,719, which reforms that law, is scheduled to take effect on December 1, 2026.
+        From its effective date, and where it applies, individuals may exercise rights including access, rectification,
+        erasure, objection, portability, revocation of consent, and temporary blocking under the conditions in that law.
+        You may direct a request to the contact above, without prejudice to rights before the competent Chilean authority
+        or courts.
+        See
+        <a href="https://www.bcn.cl/leychile/navegar?idNorma=141599">Law No. 19,628</a> and
+        <a href="https://www.bcn.cl/leychile/navegar?idNorma=1209272">Law No. 21,719</a>.
+      </p>
+      <h3>United States</h3>
+      <p>
+        There is no single comprehensive federal consumer privacy law covering every app. Depending on your state and the
+        applicability of its law, you may have rights to know/access, correct, delete, obtain a portable copy, opt out of
+        sale, targeted advertising, or certain profiling, and to appeal a denial. California residents may also have
+        rights under the CCPA, as amended, including rights concerning access, correction, deletion, portability,
+        sensitive personal information, and non-discrimination. We do not sell/share personal information or use it for
+        targeted advertising. Because the app
+        processes its filtering data only on your device and we do not receive it, we generally have no server-side copy
+        to retrieve or delete. For information we do hold, contact us using the method above. The CCPA applies only to
+        businesses covered by its legal criteria.
+        See the
+        <a href="https://oag.ca.gov/privacy/ccpa">California Attorney General's CCPA information</a>.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        NotificationFilter is a general-purpose utility and is not designed or directed to children under 13 in the
+        United States or children under 14 in Chile. The app does not create user accounts or transmit notification
+        content to us. Parents or guardians who want to stop local processing can revoke notification access and clear
+        the app's storage or uninstall the app. See the
+        <a href="https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa">FTC's COPPA Rule</a>
+        for information about the U.S. children's online privacy requirements.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        We may update this policy when the app, its data practices, or applicable requirements change. We will update the
+        date above and publish the current version at this URL. If a material change affects how the app handles data,
+        the in-app disclosure will also be updated before the changed handling begins.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Privacy questions and requests:
+        <a href="mailto:notification.filter.app@gmail.com">notification.filter.app@gmail.com</a>
+      </p>
+
+      <p class="muted">
+        This policy is an operational privacy notice, not legal advice. The publisher should confirm the developer/controller
+        identity and obtain jurisdiction-specific legal review before publication.
+      </p>
+  </main>
+  <main id="policy-es" lang="es" data-policy-language="es" hidden>
+    <h1>Política de privacidad — NotificationFilter</h1>
+      <p class="updated">Vigente desde: 18 de noviembre de 2026 · Última actualización: 18 de noviembre de 2026</p>
+
+      <p>
+        Esta política se aplica a NotificationFilter, una aplicación Android que filtra notificaciones mediante las reglas
+        que configuras. “Nosotros” se refiere al desarrollador que opera NotificationFilter mediante su ficha de Google
+        Play. El contacto de privacidad es
+        <a href="mailto:notification.filter.app@gmail.com">notification.filter.app@gmail.com</a>.
+      </p>
+
+      <h2>En resumen</h2>
+      <ul class="summary">
+        <li>La información de notificaciones y de la lista de aplicaciones se procesa localmente en tu dispositivo Android para ofrecer el filtrado.</li>
+        <li>La app no tiene cuentas ni servidor propio y no envía automáticamente a nosotros, ni a servicios de analítica o publicidad, el contenido de notificaciones, inventario de apps, reglas o historial.</li>
+        <li>No vendemos datos personales. La app no incluye anuncios ni SDK de analítica.</li>
+        <li>Puedes revocar el acceso a notificaciones en Ajustes de Android y borrar los datos locales al borrar el almacenamiento de la app o desinstalarla.</li>
+      </ul>
+
+      <h2>Información a la que accede la app y cómo se usa</h2>
+
+      <h3>Notificaciones</h3>
+      <p>
+        Si habilitas el acceso a notificaciones en Ajustes de Android, Android entrega a la app las notificaciones que
+        publican otras aplicaciones mientras el acceso esté habilitado. La app compara las notificaciones en el
+        dispositivo con tus reglas por aplicación y con las palabras clave globales. Por eso, una notificación puede
+        revisarse aunque no hayas activado un filtro para esa aplicación, ya que podría aplicarse una regla global.
+      </p>
+      <p>
+        Para esta comprobación, la app puede acceder al nombre y paquete de la aplicación de origen, al título y texto de
+        la notificación, y a identificadores o metadatos de canal/categoría. Usa estos datos únicamente para aplicar tus
+        reglas y mostrar los resultados del filtrado. El contenido puede incluir información personal o sensible, incluso
+        de otra persona. La app no lo envía a nuestros servidores.
+      </p>
+      <p>
+        Cuando una notificación se bloquea, la app guarda un registro local con el nombre y paquete de la aplicación de
+        origen, título, texto, metadatos de canal/categoría y la hora del bloqueo. Las notificaciones que no se bloquean
+        se comprueban en memoria y no se agregan a este historial.
+      </p>
+
+      <h3>Aplicaciones instaladas y canales de notificación</h3>
+      <p>
+        Para que puedas elegir aplicaciones y configurar reglas por canal, la app lee los nombres, paquetes e iconos de
+        las aplicaciones que aparecen en el lanzador, y consulta la información de canales de notificación de la
+        aplicación que abres en los ajustes del filtro. Esta información se usa localmente para mostrar opciones y
+        configurar reglas; no se sube a internet.
+      </p>
+
+      <h3>Reglas, ajustes y resúmenes locales</h3>
+      <p>
+        La app guarda localmente las aplicaciones elegidas, sus nombres y paquetes, reglas de canales, palabras clave
+        permitidas/bloqueadas, palabras clave y exclusiones globales, y la preferencia del modo reforzado. También calcula
+        un recuento semanal a partir del historial local de notificaciones bloqueadas y puede mostrarlo como notificación
+        Android. El resumen se genera en el dispositivo; no usa un servidor de notificaciones push.
+      </p>
+
+      <h3>Registros de diagnóstico opcionales y uso compartido</h3>
+      <p>
+        El registro en archivos está deshabilitado por defecto en la configuración de publicación estándar. En una
+        compilación de desarrollo u otra compilación donde se habilite, los registros se guardan en el almacenamiento
+        privado de la app por un máximo de tres días y pueden incluir el paquete/nombre de una app, el título de una
+        notificación bloqueada y la regla que coincidió. Si eliges exportar los registros, Android abre el menú del
+        sistema para compartir y tú decides si enviar el archivo y a dónde. El destinatario puede tratarlo o conservarlo
+        según sus propias prácticas; no podemos recuperar ni borrar la copia que decidas compartir.
+      </p>
+
+      <h2>Almacenamiento, conservación y eliminación</h2>
+      <ul>
+        <li>
+          Las reglas y ajustes permanecen en el dispositivo hasta que los cambies, borres el almacenamiento de la app o
+          la desinstales.
+        </li>
+        <li>
+          El historial de notificaciones bloqueadas está diseñado para conservarse como máximo 14 días. La app elimina
+          registros antiguos al inicializar la base de datos, registrar una notificación bloqueada o cargar el historial.
+          Si no usas la app, la eliminación física puede retrasarse hasta que ocurra uno de esos eventos.
+        </li>
+        <li>
+          Para borrar inmediatamente los datos locales, ve a Ajustes de Android → Aplicaciones → NotificationFilter →
+          Almacenamiento → Borrar almacenamiento/datos, o desinstala la app. Android elimina los datos privados al
+          desinstalarla. La app desactiva la copia de seguridad Android de sus datos.
+        </li>
+        <li>
+          Para detener el acceso futuro a notificaciones, desactiva NotificationFilter en Ajustes de Android → Acceso a
+          notificaciones. También puedes desactivar el permiso opcional para publicar notificaciones en Ajustes.
+        </li>
+      </ul>
+      <p>
+        No recibimos la base de datos del dispositivo y no podemos inspeccionarla ni borrarla remotamente. Si nos enviaste
+        un correo o compartiste voluntariamente un registro, escríbenos al contacto indicado para solicitar la eliminación
+        de la información que conservemos, sujeto a obligaciones legales de conservación.
+      </p>
+
+      <h2>Comunicación de datos y terceros</h2>
+      <p>
+        La funcionalidad actual de producción no tiene cuentas, analítica, publicidad, informes de fallos ni un servicio
+        backend propio, y no realiza solicitudes de red para transmitir los datos descritos. El paquete Android declara
+        el permiso de Internet; las funciones de filtrado de producción no
+        lo usan para subir tus datos. Se debe revisar nuevamente el comportamiento de red y los SDK cada vez que cambie la
+        app o sus dependencias.
+      </p>
+      <p>
+        No divulgamos, vendemos ni compartimos automáticamente la información procesada por la app. Si escribes a soporte
+        por correo, recibimos tu dirección, mensaje y cualquier archivo adjunto que decidas incluir mediante Gmail; Google
+        puede procesar esa correspondencia como proveedor de correo según sus propias condiciones de privacidad. Usamos
+        los mensajes para responder y los conservamos solo el tiempo razonablemente necesario o exigido por la ley.
+      </p>
+      <p>
+        Esta política se aloja mediante GitHub Pages. Al abrir esta página, GitHub puede tratar datos técnicos de la
+        solicitud, como tu dirección IP e información del navegador, conforme a su
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad</a>.
+        El alojamiento de esta página es independiente del funcionamiento local de la app. Android, Google Play, tu
+        proveedor de correo y cualquier aplicación que elijas en el menú para compartir de Android pueden tratar
+        información por separado conforme a sus propias políticas.
+      </p>
+
+      <h2>Permisos y elección del usuario</h2>
+      <table>
+        <thead>
+          <tr><th>Acceso o permiso</th><th>Finalidad</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Acceso a notificaciones (lo habilitas en Ajustes de Android)</td><td>Comparar notificaciones con tus reglas y guardar localmente las bloqueadas.</td></tr>
+          <tr><td>Aplicaciones del lanzador e iconos</td><td>Permitir que elijas qué aplicaciones filtrar e identificarlas en la app.</td></tr>
+          <tr><td>Publicar notificaciones</td><td>Resumen semanal local opcional y, si habilitas el modo reforzado, su notificación de estado persistente.</td></tr>
+          <tr><td>Recibir el inicio del dispositivo</td><td>Restaurar el listener después de reiniciar, si el acceso a notificaciones sigue habilitado.</td></tr>
+          <tr><td>Servicio en primer plano (uso especial)</td><td>Solo cuando activas el modo reforzado opcional.</td></tr>
+          <tr><td>Internet (declarado por el paquete Android)</td><td>Ninguna función de producción lo usa actualmente para transmitir los datos descritos en esta política.</td></tr>
+        </tbody>
+      </table>
+      <p>
+        La app no solicita acceso a contactos, SMS, registro de llamadas, ubicación, micrófono ni cámara. Puedes rechazar o
+        revocar el acceso a notificaciones; el filtrado se detendrá. Android puede mostrar solicitudes de sistema
+        separadas para publicar notificaciones.
+      </p>
+
+      <h2>Seguridad</h2>
+      <p>
+        Los datos de la app se guardan en la base SQLite y preferencias privadas de la aplicación Android, y la app no
+        incluye esos datos en la copia de seguridad Android. Se aplican el aislamiento de aplicaciones de Android y las
+        protecciones de seguridad de tu dispositivo. La app no agrega cifrado independiente a nivel de base de datos;
+        protege el dispositivo con las opciones de bloqueo y seguridad de almacenamiento disponibles. La funcionalidad
+        actual de producción no transmite datos personales de notificaciones.
+      </p>
+
+      <h2>Tus opciones y derechos de privacidad</h2>
+      <p>
+        Puedes consultar y gestionar reglas en la app, revocar el acceso a notificaciones, borrar el almacenamiento local
+        o desinstalarla como se describe arriba. Para preguntas o solicitudes sobre información que nos hayas enviado,
+        escribe a
+        <a href="mailto:notification.filter.app@gmail.com">notification.filter.app@gmail.com</a>. Evita incluir
+        notificaciones u otra información sensible salvo que sea necesario. Podemos solicitar información razonable para
+        verificar una solicitud. Los derechos y plazos de respuesta dependen de tu ubicación y de si una ley resulta
+        aplicable al desarrollador.
+      </p>
+      <h3>Chile</h3>
+      <p>
+        La Ley N.º 19.628 de Chile reconoce actualmente, en las circunstancias aplicables, derechos de acceso,
+        rectificación y eliminación o bloqueo. La Ley N.º 21.719, que reforma esa ley, tiene prevista su entrada en vigor
+        el 1 de diciembre de 2026. Desde esa fecha, cuando corresponda, las personas podrán ejercer, bajo las condiciones
+        de dicha ley, derechos de acceso, rectificación, supresión, oposición, portabilidad, revocación del consentimiento
+        y bloqueo temporal. Puedes enviar una solicitud al contacto anterior, sin perjuicio de los derechos ante las
+        autoridades o tribunales chilenos competentes. Consulta la
+        <a href="https://www.bcn.cl/leychile/navegar?idNorma=141599">Ley N.º 19.628</a> y la
+        <a href="https://www.bcn.cl/leychile/navegar?idNorma=1209272">Ley N.º 21.719</a>.
+      </p>
+      <h3>Estados Unidos</h3>
+      <p>
+        No existe una única ley federal integral de privacidad del consumidor que cubra todas las aplicaciones. Según el
+        estado donde vivas y el alcance de la ley aplicable, podrías tener derechos de acceso/conocimiento, corrección,
+        eliminación, obtener una copia portable, oponerte a la venta, publicidad dirigida o ciertos perfiles, y apelar
+        una denegación. Las personas residentes en California también pueden tener derechos bajo la CCPA y sus reformas,
+        incluidos derechos de acceso, corrección, eliminación, portabilidad, relativos a información personal sensible y
+        a no sufrir discriminación. No vendemos ni compartimos información personal ni la usamos para publicidad
+        dirigida. Como la app procesa los datos de filtrado solo en tu
+        dispositivo y no los recibimos, normalmente no tenemos una copia en servidores que podamos recuperar o borrar.
+        Para información que sí conservemos, contáctanos por el medio indicado. La CCPA solo se aplica a empresas que
+        cumplen sus criterios legales. Consulta la
+        <a href="https://oag.ca.gov/privacy/ccpa">información sobre la CCPA de la Fiscalía General de California</a>.
+      </p>
+
+      <h2>Menores</h2>
+      <p>
+        NotificationFilter es una utilidad de uso general y no está diseñada ni dirigida a menores de 13 años en Estados
+        Unidos ni a menores de 14 años en Chile. La app no crea cuentas ni transmite a nosotros el contenido de las
+        notificaciones. Los padres o tutores que quieran detener el procesamiento local pueden revocar el acceso a
+        notificaciones y borrar el almacenamiento de la app o desinstalarla. Consulta la
+        <a href="https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa">regla COPPA de la FTC</a>
+        para información sobre los requisitos estadounidenses de privacidad infantil en línea.
+      </p>
+
+      <h2>Cambios a esta política</h2>
+      <p>
+        Podemos actualizar esta política si cambian la app, sus prácticas de datos o los requisitos aplicables.
+        Actualizaremos la fecha indicada y publicaremos la versión vigente en esta URL. Si un cambio importante modifica
+        cómo se tratan los datos, también actualizaremos la divulgación dentro de la app antes de iniciar ese tratamiento.
+      </p>
+
+      <h2>Contacto</h2>
+      <p>
+        Consultas y solicitudes de privacidad:
+        <a href="mailto:notification.filter.app@gmail.com">notification.filter.app@gmail.com</a>
+      </p>
+
+      <p class="muted">
+        Esta política es un aviso operativo de privacidad, no asesoría legal. Antes de publicarla, el editor debe confirmar
+        la identidad legal del desarrollador/responsable y obtener revisión legal específica para cada jurisdicción.
+      </p>
+  </main>
+
+  <script>
+    (() => {
+      const policies = document.querySelectorAll('[data-policy-language]');
+      const buttons = document.querySelectorAll('[data-language-button]');
+      const titles = {
+        en: 'Privacy Policy — NotificationFilter',
+        es: 'Política de privacidad — NotificationFilter',
+      };
+      const descriptions = {
+        en: 'Privacy Policy for the NotificationFilter Android app.',
+        es: 'Política de privacidad de la aplicación Android NotificationFilter.',
+      };
+
+      function setLanguage(language, updateUrl = false) {
+        const selected = language === 'es' ? 'es' : 'en';
+        document.documentElement.lang = selected;
+        policies.forEach((policy) => {
+          policy.hidden = policy.dataset.policyLanguage !== selected;
+        });
+        buttons.forEach((button) => {
+          button.setAttribute('aria-pressed', String(button.dataset.languageButton === selected));
+        });
+        document.title = titles[selected];
+        document.querySelector('meta[name="description"]').content = descriptions[selected];
+
+        if (updateUrl) {
+          const url = new URL(window.location.href);
+          url.searchParams.set('lang', selected);
+          window.history.replaceState(null, '', url);
+        }
+      }
+
+      const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
+      const preferredLanguage = requestedLanguage || navigator.language || 'en';
+      setLanguage(preferredLanguage.toLowerCase().startsWith('es') ? 'es' : 'en');
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => setLanguage(button.dataset.languageButton, true));
+      });
+    })();
+  </script>
+</body>
+</html>

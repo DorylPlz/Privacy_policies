@@ -93,14 +93,16 @@
       <h3>Installed apps and notification channels</h3>
       <p>
         To let you choose apps and configure channel rules, the app reads launcher apps' package names, displayed names,
-        and icons, and reads notification-channel information for an app you open in the filter settings. This information
-        is used on-device for display and rule configuration; it is not uploaded.
+        and icons. It learns notification channel IDs and names from notifications posted while Notification access is
+        enabled, then stores those details locally so you can configure rules. A channel may not appear until its app
+        posts a notification. This information is not uploaded.
       </p>
 
       <h3>Rules, settings, and local summaries</h3>
       <p>
-        The app stores your selected apps, package names and labels, channel rules, allow/block keywords, global keyword
-        rules and exclusions, and reinforced-mode preference locally. It also calculates a weekly count from local
+        The app stores your selected apps, package names and labels, channel rules and locally discovered channel IDs
+        and names, allow/block keywords, global keyword rules and exclusions, and reinforced-mode preference locally.
+        It also calculates a weekly count from local
         blocked-history entries and may show it as an Android notification. The summary is generated on the device; it
         does not use a push-notification server.
       </p>
@@ -118,7 +120,8 @@
       <h2>Storage, retention, and deletion</h2>
       <ul>
         <li>
-          Rules and settings remain on the device until you change them, clear the app's storage, or uninstall the app.
+          Rules, settings, and locally discovered channel IDs/names remain on the device until you change them, clear
+          the app's storage, or uninstall the app.
         </li>
         <li>
           Blocked-notification history is intended to be retained for no more than 14 days. The app removes older entries
@@ -297,15 +300,17 @@
       <h3>Aplicaciones instaladas y canales de notificación</h3>
       <p>
         Para que puedas elegir aplicaciones y configurar reglas por canal, la app lee los nombres, paquetes e iconos de
-        las aplicaciones que aparecen en el lanzador, y consulta la información de canales de notificación de la
-        aplicación que abres en los ajustes del filtro. Esta información se usa localmente para mostrar opciones y
-        configurar reglas; no se sube a internet.
+        las aplicaciones que aparecen en el lanzador. Aprende los identificadores y nombres de canales a partir de las
+        notificaciones que se publican mientras el acceso a notificaciones está habilitado, y guarda esos datos
+        localmente para que puedas configurar reglas. Un canal puede no aparecer hasta que su app publique una
+        notificación. Esta información no se sube a internet.
       </p>
 
       <h3>Reglas, ajustes y resúmenes locales</h3>
       <p>
-        La app guarda localmente las aplicaciones elegidas, sus nombres y paquetes, reglas de canales, palabras clave
-        permitidas/bloqueadas, palabras clave y exclusiones globales, y la preferencia del modo reforzado. También calcula
+        La app guarda localmente las aplicaciones elegidas, sus nombres y paquetes, reglas de canales e identificadores
+        y nombres de canales detectados, palabras clave permitidas/bloqueadas, palabras clave y exclusiones globales,
+        y la preferencia del modo reforzado. También calcula
         un recuento semanal a partir del historial local de notificaciones bloqueadas y puede mostrarlo como notificación
         Android. El resumen se genera en el dispositivo; no usa un servidor de notificaciones push.
       </p>
@@ -323,8 +328,8 @@
       <h2>Almacenamiento, conservación y eliminación</h2>
       <ul>
         <li>
-          Las reglas y ajustes permanecen en el dispositivo hasta que los cambies, borres el almacenamiento de la app o
-          la desinstales.
+          Las reglas, los ajustes y los identificadores/nombres de canales detectados permanecen en el dispositivo hasta
+          que los cambies, borres el almacenamiento de la app o la desinstales.
         </li>
         <li>
           El historial de notificaciones bloqueadas está diseñado para conservarse como máximo 14 días. La app elimina
